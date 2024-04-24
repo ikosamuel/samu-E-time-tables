@@ -1,0 +1,2 @@
+
+SELECT course.course_name,period.date,period.start,period.end,period.detail,class.class_name,class.class_detail,user.* FROM time_table INNER JOIN class ON time_table.class_id=class.class_id INNER JOIN course ON time_table.course_id=course.course_id INNER JOIN period ON time_table.periods_id=period.periods_id INNER JOIN user ON time_table.user_id=user.user_id;
